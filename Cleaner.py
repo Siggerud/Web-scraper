@@ -1,9 +1,13 @@
+# Cleaner filters and modifies raw data from bs4
+
 import bs4
 
 class Cleaner:
     def __init__(self, elems):
         self.elems = elems
 
+
+    # gets the text in the elements retrieved from bs4
     def getText(self):
         elems = self.elems
 
@@ -17,6 +21,7 @@ class Cleaner:
         self.elems = newElemList
 
 
+    # adds index to each element in input list
     def addIndex(self, listIndex):
         elems = self.elems
 

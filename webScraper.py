@@ -11,7 +11,7 @@ class Parser:
         self.elems = self.getElems(soup, selectors)
 
 
-
+    # retrieves elements and creates a list for each selector element
     def getElems(self, soup, selectors):
         elems = []
         for selector in selectors:
